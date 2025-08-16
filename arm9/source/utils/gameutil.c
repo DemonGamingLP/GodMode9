@@ -4071,7 +4071,7 @@ u32 GetGoodName(char* name, const char* path, bool quick) {
     u64 type_donor = IdentifyFileType(path);
     char* ext =
         (type_donor & GAME_CIA)  ? "cia" :
-        (type_donor & GAME_NCSD) ? "3ds" :
+        (type_donor & GAME_NCSD) ? "cci" :
         (type_donor & GAME_NCCH) ? ((type_donor & FLAG_CXI) ? "cxi" : "cfa") :
         (type_donor & GAME_NDS)  ? "nds" :
         (type_donor & GAME_GBA)  ? "gba" :
