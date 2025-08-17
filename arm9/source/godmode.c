@@ -1045,7 +1045,7 @@ u32 CartRawDump(void) {
 
     // destination path
     snprintf(dest, sizeof(dest), "%s/%s_%08llX.%s",
-        OUTPUT_PATH, cname, dsize, (cdata->cart_type & CART_CTR) ? "3ds" : "nds");
+        OUTPUT_PATH, cname, dsize, (cdata->cart_type & CART_CTR) ? "cci" : "nds");
 
     // buffer allocation
     u8* buf = (u8*) malloc(STD_BUFFER_SIZE);
