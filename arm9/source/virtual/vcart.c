@@ -27,7 +27,7 @@ bool ReadVCartDir(VirtualFile* vfile, VirtualDir* vdir) {
         InitVCartDrive();
     if (!cart_init) return false;
 
-    const char* ext = (cdata->cart_type & CART_CTR) ? "3ds" : "nds";
+    const char* ext = (cdata->cart_type & CART_CTR) ? "cci" : "nds";
     char name[24];
     GetCartName(name, cdata);
     memset(vfile, 0, sizeof(VirtualFile));
